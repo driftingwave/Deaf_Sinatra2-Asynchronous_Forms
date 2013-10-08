@@ -1,0 +1,14 @@
+<div class="container">
+  <h1 id="header"> Deaf Grandma</h1>
+  <div id="response">
+    <% if @grandma %>
+      <%= erb  :partial %>
+    <% end %>
+  </div>
+  <form id="target" action="/grandma" method="post">
+    Say something to Grandma:
+    <br>
+    <input id="sentence" type="text" name="user_input">
+    <input type="submit" value="Say it!">
+  </form>
+</div>
